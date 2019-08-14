@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Rooms</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/custom.js"> </script>
+
+
+</head>
+
+<body>
+
+<!-- Preloader -->
+    <div id="preloader">
+        <div class="pre-container">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end Preloader -->
+
+    <!---Logo ---->
+    <div>
+        <img class="logo" src="img/logo_time2.png" width="300">
+    </div>
+
+    <section class="container main">
+        <div class="row">
+            <div class="col-md-8">
+                <a class="tooltip" href="#">
+                    <span class="tooltiptext">Nosotros</span>
+                    <img id="image" class="clock1" src="img/boton1.png" width="200" alt="">
+                </a>
+            </div>
+           
+            <!----- Boton de modal -------->
+                
+            <section>
+            <div class="col-md-4">
+                
+                <button id="button" class="button2 tooltip" onclick="openPopupMenu()"><img id="img2" class="clock2" src="img/boton2.png" width="45"><span class="tooltiptextSus">Suscríbete</span></button>                    
+                
+
+                <div id="popup_bg" class="modal">
+                    <div class="modal-content" >
+                        <span class="closeBtn" onclick="closePopupMenu()">&times;</span>
+                        <h3>Suscríbete</h3>
+                        <form class="containerForm">
+                            <input type="text" name="name" placeholder="Nombre" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre'">
+                            <input type="email" name="email" placeholder="Email" required="">
+                            <input type="password" name="pass" placeholder="pass" required="">
+                            <input type="password" name="pass" placeholder="Confirm pass" required="">
+                            <div>
+                                <button>Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+        <!----- Fin Boton de modal -------->
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <a title="Room Pirate" href="#">
+                    <img class="pirata" src="img/logo_pirate.png" width="110">
+                </a>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <a title="Room Order" href="#">
+                    <img class="order" src="img/logo_order.png" width="110">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="table">
+       <img src="img/table.png" width="480">
+              
+       <!---- caja 1 --->
+       <div>
+            <a class="tooltip" href="#">
+                <span class="tooltiptextCor">Corporativo</span>
+                <img class="caja1" src="img/caja.png" width="80">
+            </a>
+        </div>
+
+       <!---- caja 2 --->
+       <div>
+            <a class="tooltip" href="#">
+                <span class="tooltiptextApa">Aparta tu lugar</span>
+                <img class="caja2" src="img/caja2.png" width="70">
+            </a>
+        </div>
+
+       <!---- bobina --->
+       <div>
+            <a class="tooltip" href="#">
+                <span class="tooltiptextCon">Contáctanos</span>
+                <img class="bobina" src="img/bobina.png" width="80">
+            </a>
+        </div>
+       
+       <!---- lampara --->  
+       <div>
+            <a class="tooltip" href="#">
+                <span class="tooltiptextInfo">Información</span>
+                <img class="lampara" src="img/lamp.png" width="100">
+            </a>
+        </div>
+
+        <!---- botella --->  
+       <div>
+            <a class="tooltip" href="#">
+                <span class="tooltiptextBote">Extras</span>
+                <img class="botella" src="img/botle.png" width="50">
+            </a>
+        </div>
+    </section>
+
+                
+  
+<script>rotateAnimation("image",120);</script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
